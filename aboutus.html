@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About - THE GRID LABS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;600&amp;family=JetBrains+Mono:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#1b1b1b",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-bright": "#f9f9f9",
+                        "outline": "#7e7576",
+                        "surface-dim": "#dadada",
+                        "tertiary": "#000000",
+                        "on-primary-container": "#848484",
+                        "tertiary-fixed": "#e2e2e2",
+                        "primary-fixed": "#e2e2e2",
+                        "error": "#ba1a1a",
+                        "primary": "#000000",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary-container": "#838484",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-surface-variant": "#4c4546",
+                        "surface-container-highest": "#e2e2e2",
+                        "secondary-fixed-dim": "#ffb4a8",
+                        "secondary": "#ba0b06",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-fixed": "#1b1b1b",
+                        "surface-container-high": "#e8e8e8",
+                        "on-secondary-fixed-variant": "#930001",
+                        "inverse-primary": "#c6c6c6",
+                        "surface": "#f9f9f9",
+                        "secondary-container": "#de2d1f",
+                        "outline-variant": "#cfc4c5",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary-fixed": "#410000",
+                        "on-background": "#1a1c1c",
+                        "surface-container-low": "#f4f3f3",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary-container": "#1a1c1c",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-container": "#eeeeee",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "background": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "inverse-surface": "#2f3131",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#ffdad4",
+                        "on-tertiary-fixed": "#1a1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "40px",
+                        "unit": "4px",
+                        "section-gap": "160px",
+                        "gutter": "1px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Anton"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-xl-mobile": ["Anton"],
+                        "display-xl": ["Anton"],
+                        "headline-lg-mobile": ["Anton"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-caps": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["64px", { "lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "display-xl-mobile": ["80px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "display-xl": ["180px", { "lineHeight": "160px", "letterSpacing": "-0.04em", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["40px", { "lineHeight": "44px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.surface');
+            color: theme('colors.on-surface');
+            -webkit-font-smoothing: antialiased;
+        }
+        /* The Visible Grid */
+        .grid-bg {
+            background-image: 
+                linear-gradient(to right, theme('colors.surface-dim') 1px, transparent 1px),
+                linear-gradient(to bottom, theme('colors.surface-dim') 1px, transparent 1px);
+            background-size: calc((100vw - theme('spacing.margin-desktop') * 2) / 12) 100px; /* 12 column grid */
+            background-position: center top;
+        }
+        @media (max-width: 768px) {
+            .grid-bg {
+                background-size: calc((100vw - theme('spacing.margin-mobile') * 2) / 4) 50px; /* 4 column grid */
+            }
+        }
+        
+        .border-grid { border-color: theme('colors.surface-dim'); }
+        .structural-box {
+            border: 1px solid theme('colors.primary');
+            background-color: theme('colors.surface');
+        }
+        .structural-box-inverted {
+            border: 1px solid theme('colors.primary');
+            background-color: theme('colors.primary');
+            color: theme('colors.on-primary');
+        }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden">
+<!-- Grid Overlay (Decorative) -->
+<div class="fixed inset-0 pointer-events-none z-[-1] grid-bg px-margin-desktop opacity-50"></div>
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 bg-surface border-b border-surface-dim transition-all duration-300 ease-in-out">
+<div class="font-headline-lg text-body-md uppercase tracking-tighter text-primary">
+            THE GRID LABS
+        </div>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex gap-8">
+<li><a class="font-label-caps text-label-caps text-primary hover:text-secondary transition-colors duration-200" href="#">Services</a></li>
+<li><a class="font-label-caps text-label-caps text-primary hover:text-secondary transition-colors duration-200" href="#">Work</a></li>
+<li><a class="font-label-caps text-label-caps text-secondary font-bold border-b-2 border-secondary pb-1" href="#">About</a></li>
+<li><a class="font-label-caps text-label-caps text-primary hover:text-secondary transition-colors duration-200" href="#">Contact</a></li>
+</ul>
+<a class="hidden md:inline-block bg-primary text-on-primary font-label-caps text-label-caps uppercase px-6 py-3 border border-primary hover:bg-secondary hover:border-secondary transition-colors duration-200" href="#">
+            Start a Project
+        </a>
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[80px]"> <!-- Offset for fixed nav -->
+<!-- Hero Section -->
+<header class="relative px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col justify-end min-h-[819px] border-b border-surface-dim">
+<div class="max-w-7xl">
+<p class="font-label-caps text-label-caps text-secondary mb-4 uppercase">
+                    Architecture &amp; Code
+                </p>
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-primary uppercase leading-none tracking-tighter mix-blend-difference z-10 relative">
+                    ABOUT US
+                </h1>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase max-w-4xl mt-8">
+                    ENGINEERING DIGITAL PRECISION
+                </h2>
+</div>
+<!-- Hero Abstract Image Block, snapped to grid -->
+<div class="absolute top-[20%] right-margin-desktop w-[40%] h-[60%] border border-primary bg-surface z-0 hidden lg:block overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A highly abstract, high-contrast black and white architectural photograph of a brutalist concrete structure. The perspective is sharp and precise, emphasizing deep shadows, sharp geometry, and structural integrity. A subtle red accent highlights a central focal point. The aesthetic is clean, technical, and editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAlgcm9d9eCdPQx3KplM-L2cSy60bv_6XuFLvWeOI5BYnjqyez9des6XuqfS02gMHBO3koLalNh_CQu7BCTA9nLSnzimNmWQ7InRhrPZFjHKOWlOmk099XFnJfkkwrQlztbFqx3rkCBhACvuOPkh0EHcXVGKbjHKzu3JFw3hkMkWpgO5wmYGyHH2-I3F0o9xrbABCqeYYVIJXlen6NBZjcKKsdANnX2bw91VX9IhBdkPUYoFOKgycwPDldaxau6Wg0yhtq4AxiR6s"/>
+</div>
+</header>
+<!-- Our Philosophy Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap border-b border-surface-dim">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 border-r border-surface-dim pr-8">
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase sticky top-[100px]">
+                        OUR<br/>PHILOSOPHY
+                    </h3>
+</div>
+<div class="md:col-span-8 md:pl-8">
+<div class="structural-box p-8 mb-8">
+<p class="font-body-lg text-body-lg text-on-surface mb-6">
+                            We do not decorate. We build. Every system we design is rooted in architectural logic, ensuring structural soundness before aesthetics are applied.
+                        </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            우리는 단순히 화면을 장식하는 것이 아니라 견고한 시스템을 설계합니다. 모든 픽셀과 코드 줄은 명확한 목적을 가져야 하며, 확장 가능하고 예측 가능한 아키텍처 위에 구축되어야 합니다. 이것이 우리의 디지털 건축 철학입니다.
+                        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="border border-surface-dim h-64 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up high contrast black and white photo of a complex server rack with glowing red LEDs, illustrating technical precision and infrastructure. Sharp focus, editorial lighting, clean composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUOBlflz2zvN6cGCOL7JaoQUMO-1FTt-fFn99BcqNFKqGeqR-20h4ZZKW2kE5PQJYtt_SQsIOhFxIf2jiqFb2f3IePARgl8f3PYatRIOTts-1uMlWEURIEn6r4oPGqsQ4l01JFxboFnzm_-hpYUdefl7Ko9eucvoUE4N_e25RoFiSCisC1eiQ6fk32a47x1ZUSfQUoKpP1VoNix8z-SQZDdL17lukr6BWSJg2k0ABxv4TuWoO3THb1J0jqjW_pN1MCPA-5cEqlyBw"/>
+</div>
+<div class="border border-surface-dim h-64 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A minimalist overhead shot of an architect's desk with blueprints, a straight edge ruler, and a stark black pen. High contrast, clean lighting, white background with stark shadows, emphasizing precision and planning." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzMVcYg_fqEOqLVDciyIic1t0LOkLBxB1uXhIVZjWGiYlpQTSm3Tu5BcLnBuhv1x4YVgErwjS_0mvz3JrKKGaWu56RNgzo_flXkoMV4iBtiZYaJ7sO1bFwc1E_cM6PrFswE2t_HwtVKR2W2fqVVN7TAvUYTS72PpIoc7WzK46PMGg9FMixTnpZrx8vUdm6rkvd656W_s2CAqIkib6Hs8770wOTrnO6sowSdgzz7sSDgmiPNLQQryUV_ujY1MtTiieoszEFLTOpvFo"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Values Section (Rigid Grid) -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap bg-primary text-on-primary border-b border-primary-container">
+<div class="mb-16">
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase text-center w-full border-b border-on-primary-fixed-variant pb-4">
+                    CORE VALUES
+                </h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter bg-on-primary-fixed-variant">
+<!-- Value 1 -->
+<div class="bg-primary p-8 flex flex-col justify-between min-h-[300px] border border-transparent hover:border-secondary transition-colors duration-300">
+<div class="font-label-caps text-label-caps text-secondary mb-4">01</div>
+<div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile uppercase mb-4">PRECISION</h4>
+<p class="font-body-md text-body-md text-on-primary-container">Exactitude in every layer of the stack. We measure twice and cut once, ensuring flawless execution in complex digital environments.</p>
+</div>
+</div>
+<!-- Value 2 -->
+<div class="bg-primary p-8 flex flex-col justify-between min-h-[300px] border border-transparent hover:border-secondary transition-colors duration-300">
+<div class="font-label-caps text-label-caps text-secondary mb-4">02</div>
+<div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile uppercase mb-4">SCALABILITY</h4>
+<p class="font-body-md text-body-md text-on-primary-container">Systems designed for growth. Our architectures are robust frameworks built to withstand evolving demands and exponential scale.</p>
+</div>
+</div>
+<!-- Value 3 -->
+<div class="bg-primary p-8 flex flex-col justify-between min-h-[300px] border border-transparent hover:border-secondary transition-colors duration-300">
+<div class="font-label-caps text-label-caps text-secondary mb-4">03</div>
+<div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile uppercase mb-4">INNOVATION</h4>
+<p class="font-body-md text-body-md text-on-primary-container">Challenging technical boundaries. We implement cutting-edge solutions (AI, advanced ERP integrations) grounded in practical utility.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-desktop pt-section-gap pb-12 flex flex-col items-center bg-primary text-on-primary">
+<div class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl uppercase tracking-tighter text-on-primary block w-full text-center border-b border-on-primary-fixed-variant mb-12 pb-4">
+            THE GRID LABS
+        </div>
+<div class="w-full flex flex-col md:flex-row justify-between items-center gap-8 border-t border-on-primary-fixed-variant pt-8">
+<ul class="flex flex-wrap justify-center gap-6">
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-secondary-fixed transition-colors duration-200" href="#">Services</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-secondary-fixed transition-colors duration-200" href="#">Work</a></li>
+<li><a class="font-body-md text-body-md text-on-primary font-bold" href="#">About</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-secondary-fixed transition-colors duration-200" href="#">Contact</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-secondary-fixed transition-colors duration-200" href="#">Privacy</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-secondary-fixed transition-colors duration-200" href="#">Terms</a></li>
+</ul>
+<div class="font-body-md text-body-md text-on-primary-container">
+                ©2024 THE GRID LABS. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
