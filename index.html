@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE GRID LABS | CORE EXPERTISE</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;700&amp;family=JetBrains+Mono:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#1b1b1b",
+                    "on-background": "#1a1c1c",
+                    "secondary-fixed-dim": "#ffb4a8",
+                    "inverse-on-surface": "#f1f1f1",
+                    "on-secondary-fixed-variant": "#930001",
+                    "surface": "#f9f9f9",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "surface-variant": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "primary-container": "#1b1b1b",
+                    "on-secondary-container": "#fffbff",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-bright": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#474747",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#e2e2e2",
+                    "surface-dim": "#dadada",
+                    "tertiary-container": "#1a1c1c",
+                    "surface-container-low": "#f4f3f3",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "primary": "#000000",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-fixed": "#e2e2e2",
+                    "surface-container": "#eeeeee",
+                    "secondary-fixed": "#ffdad4",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#2f3131",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#000000",
+                    "error-container": "#ffdad6",
+                    "background": "#f9f9f9",
+                    "outline-variant": "#cfc4c5",
+                    "on-secondary-fixed": "#410000",
+                    "inverse-primary": "#c6c6c6",
+                    "secondary": "#ba0b06",
+                    "surface-tint": "#5e5e5e",
+                    "on-primary-container": "#848484",
+                    "outline": "#7e7576",
+                    "on-surface-variant": "#4c4546",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-tertiary-container": "#838484",
+                    "secondary-container": "#de2d1f",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "gutter": "1px",
+                    "margin-desktop": "40px",
+                    "margin-mobile": "20px",
+                    "section-gap": "160px"
+            },
+            "fontFamily": {
+                    "display-xl": ["Anton"],
+                    "headline-lg": ["Anton"],
+                    "display-xl-mobile": ["Anton"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-caps": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Anton"],
+                    "body-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "display-xl": ["180px", {"lineHeight": "160px", "letterSpacing": "-0.04em", "fontWeight": "400"}],
+                    "headline-lg": ["64px", {"lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "display-xl-mobile": ["80px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["40px", {"lineHeight": "44px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grid-line-v { width: 1px; background-color: theme('colors.surface-variant'); height: 100%; position: absolute; top: 0; }
+        .grid-line-h { height: 1px; background-color: theme('colors.surface-variant'); width: 100%; position: absolute; left: 0; }
+        .sticky-header { backdrop-filter: blur(8px); }
+        .hover-reveal-img { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+        .card-container:hover .hover-reveal-img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TOP NAVBAR -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 h-[80px] bg-surface border-b border-on-background">
+<div class="font-headline-lg text-[32px] md:text-headline-lg uppercase tracking-tighter text-on-background">THE GRID LABS</div>
+<div class="hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-secondary font-bold border-b-2 border-secondary transition-colors duration-300" href="#">Services</a>
+<a class="font-label-caps text-label-caps text-on-background hover:text-secondary transition-colors duration-300" href="#">Work</a>
+<a class="font-label-caps text-label-caps text-on-background hover:text-secondary transition-colors duration-300" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-background hover:text-secondary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-label-caps text-label-caps hover:bg-secondary active:opacity-80 active:scale-95 transition-all">Start a Project</button>
+</nav>
+<!-- HERO SECTION -->
+<section class="pt-[160px] pb-section-gap px-margin-desktop relative">
+<div class="absolute top-0 left-margin-desktop grid-line-v"></div>
+<div class="absolute top-0 right-margin-desktop grid-line-v"></div>
+<div class="grid grid-cols-12 gap-gutter relative">
+<div class="col-span-12">
+<p class="font-label-caps text-label-caps text-secondary mb-8">CORE EXPERTISE</p>
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl uppercase block leading-none -ml-1 md:-ml-2">
+                    EXPERTISE
+                </h1>
+</div>
+<div class="col-span-12 md:col-span-6 mt-12 md:mt-24 border-t border-on-background pt-8">
+<p class="font-body-lg text-body-lg max-w-xl leading-relaxed">
+                    우리는 단순한 코딩을 넘어 디지털 아키텍처를 설계합니다. 인공지능, 복합 이커머스 솔루션, 그리고 기업용 ERP 시스템에 이르기까지 정밀한 엔지니어링을 통해 비즈니스의 구조적 완성도를 실현합니다.
+                </p>
+</div>
+</div>
+</section>
+<!-- EXPERTISE GRID (Deep Dive) -->
+<section class="border-t border-on-background bg-surface overflow-hidden">
+<!-- 01 E-COMMERCE -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-0 border-b border-on-background min-h-[600px]">
+<div class="md:col-span-5 p-margin-desktop flex flex-col justify-between border-r border-on-background">
+<div>
+<span class="font-display-xl text-headline-lg opacity-20 block mb-4">01</span>
+<h2 class="font-headline-lg text-headline-lg uppercase mb-8">E-Commerce<br/>Systems</h2>
+<p class="font-body-md text-body-md mb-8">
+                        글로벌 스케일의 고성능 이커머스 인프라를 구축합니다. 초당 수만 건의 트랜잭션을 처리할 수 있는 아키텍처와 사용자 경험을 최적화한 인터페이스를 결합하여 수익을 극대화합니다.
+                    </p>
+</div>
+<ul class="space-y-2 border-t border-surface-variant pt-6">
+<li class="font-label-caps text-label-caps flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary"></span> HIGH-PERFORMANCE CHECKOUT</li>
+<li class="font-label-caps text-label-caps flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary"></span> GLOBAL INVENTORY SYNC</li>
+<li class="font-label-caps text-label-caps flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary"></span> CUSTOM HEADLESS ARCHITECTURE</li>
+</ul>
+</div>
+<div class="md:col-span-7 bg-on-background relative overflow-hidden group">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="A cinematic black and white photograph of a modern, minimalist architectural staircase with sharp angles and clean lines, emphasizing structural integrity and technical precision in a premium light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP1doIfgZHlpBJPk0u4PxcPaDJ_89pECV-zG2fsadWQKPgI8XHBf58YRP7PYCekf1k8rtiltbOzI7iaP0Mck628wpCyNEvR5TSkzOMefj9kmV67U8kDA8K16A1Ac0_a3QCAwFJp0l3SEHLQKVTMK0aJQ1lOsVlU2C1j69jfv8-l4ZyQHVkkF3-nuQicTeKv3XS8CyY3ux0yHn8hBq2zKOD6ne4ghmWN7HjMmKtHbrjgMWHoV-NF8hsQPTi57nsJKUxhmQ6IMXyqeY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 to-transparent"></div>
+</div>
+</div>
+<!-- 02 ERP SYSTEMS -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-0 border-b border-on-background min-h-[600px]">
+<div class="md:col-span-7 bg-on-background relative overflow-hidden order-2 md:order-1 group">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="A detailed black and white shot of a complex data center server rack with glowing indicator lights and neatly organized technical cables, representing high-end ERP systems and backend stability in a minimalist technical style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvRQDzQVZRv5YkICfaS5Dmh4FcP2VODrq9pt3WCzs7G1rQEwtmgxACFVvEbIohhgruIewuQUuPIm4AfER6Q88i9ovouEDQdkE0dkqtVm5E80OL5z9XYYOIY_4CNy3SGHAtSAj4tW96qmi63JMP2HnBXatCsSNd6DXqfhAC4z68-n0n_qmmyNxYs2KSFyX5GjA4zs0YhFvIVDCGqsXX0DO1lBRqXvboPVUA0chVBXFAMnJe_H3BRpmpsrGyJC2jAQed7lNG_cfdoHI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 to-transparent"></div>
+</div>
+<div class="md:col-span-5 p-margin-desktop flex flex-col justify-between border-l border-on-background order-1 md:order-2">
+<div>
+<span class="font-display-xl text-headline-lg opacity-20 block mb-4">02</span>
+<h2 class="font-headline-lg text-headline-lg uppercase mb-8">ERP<br/>Engineering</h2>
+<p class="font-body-md text-body-md mb-8">
+                        기업의 복잡한 운영 프로세스를 하나의 정교한 시스템으로 통합합니다. 공급망 관리부터 재무, 인사까지 모든 데이터를 실시간으로 동기화하여 의사결정의 속도를 높입니다.
+                    </p>
+</div>
+<ul class="space-y-2 border-t border-surface-variant pt-6">
+<li class="font-label-caps text-label-caps flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary"></span> REAL-TIME DATA PIPELINES</li>
+<li class="font-label-caps text-label-caps flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary"></span> LEGACY SYSTEM INTEGRATION</li>
+<li class="font-label-caps text-label-caps flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary"></span> ENTERPRISE SECURITY PROTOCOLS</li>
+</ul>
+</div>
+</div>
+<!-- 03 AI SOLUTIONS -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-0 min-h-[600px]">
+<div class="md:col-span-5 p-margin-desktop flex flex-col justify-between border-r border-on-background">
+<div>
+<span class="font-display-xl text-headline-lg opacity-20 block mb-4">03</span>
+<h2 class="font-headline-lg text-headline-lg uppercase mb-8">AI<br/>Implementations</h2>
+<p class="font-body-md text-body-md mb-8">
+                        최신 LLM과 머신러닝 기술을 비즈니스 워크플로우에 결합합니다. 단순한 챗봇을 넘어 데이터 분석, 자동화, 그리고 예측 모델링을 통해 실질적인 가치를 창출하는 AI를 설계합니다.
+                    </p>
+</div>
+<ul class="space-y-2 border-t border-surface-variant pt-6">
+<li class="font-label-caps text-label-caps flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary"></span> CUSTOM LLM FINE-TUNING</li>
+<li class="font-label-caps text-label-caps flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary"></span> PREDICTIVE ANALYTICS</li>
+<li class="font-label-caps text-label-caps flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary"></span> NEURAL SEARCH ARCHITECTURES</li>
+</ul>
+</div>
+<div class="md:col-span-7 bg-on-background relative overflow-hidden group">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="A sophisticated macro photograph of a microchip circuit board in high-contrast black and white, with thin metallic traces and futuristic geometric patterns, evoking a sense of advanced AI architecture and technical depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNdOHiTemJ-hX8cUTXDIFtlp4yOhfJvCb1ESVphhFawuAmr1LKjiNBFgaQnwxapW0-PysPIouaT_N3GQ0jt4Bv4q1XshxUodd6uZFPQCmqjI-tbUlcOsoTjddX3IaoXYmKxbbBeyPc4uT_V3GA82MPxELixKGY7-DXK-F2FmrsUwiKivhFhkAbR1llTTF8492-nSlcVPK62619ATaPGD00pqLkXvCBuqj_f6Og7f4CAuVWB4FELEoreChPLKrMVNUj_AjXiMjATNI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- PROCESS SECTION -->
+<section class="py-section-gap px-margin-desktop bg-on-background text-surface relative">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 mb-24">
+<h2 class="font-display-xl text-display-xl-mobile md:text-headline-lg uppercase leading-none border-b border-surface/20 pb-8">METHODOLOGY</h2>
+</div>
+<!-- Discovery -->
+<div class="col-span-12 md:col-span-3 border-l border-surface/20 pl-6 py-8 hover:bg-surface/5 transition-colors group">
+<span class="font-label-caps text-secondary block mb-4">01</span>
+<h3 class="font-headline-lg text-[24px] uppercase mb-4">Discovery</h3>
+<p class="font-body-md text-surface-variant opacity-80">비즈니스의 본질을 파악하고 최적의 기술 스택을 선정하는 기초를 다집니다.</p>
+</div>
+<!-- Architecture -->
+<div class="col-span-12 md:col-span-3 border-l border-surface/20 pl-6 py-8 hover:bg-surface/5 transition-colors group">
+<span class="font-label-caps text-secondary block mb-4">02</span>
+<h3 class="font-headline-lg text-[24px] uppercase mb-4">Architecture</h3>
+<p class="font-body-md text-surface-variant opacity-80">확장성과 안정성을 고려한 견고한 디지털 시스템의 청사진을 설계합니다.</p>
+</div>
+<!-- Development -->
+<div class="col-span-12 md:col-span-3 border-l border-surface/20 pl-6 py-8 hover:bg-surface/5 transition-colors group">
+<span class="font-label-caps text-secondary block mb-4">03</span>
+<h3 class="font-headline-lg text-[24px] uppercase mb-4">Development</h3>
+<p class="font-body-md text-surface-variant opacity-80">정밀한 엔지니어링을 통해 버그 없는 고성능 코드를 구현합니다.</p>
+</div>
+<!-- Optimization -->
+<div class="col-span-12 md:col-span-3 border-l border-surface/20 pl-6 py-8 hover:bg-surface/5 transition-colors group">
+<span class="font-label-caps text-secondary block mb-4">04</span>
+<h3 class="font-headline-lg text-[24px] uppercase mb-4">Optimization</h3>
+<p class="font-body-md text-surface-variant opacity-80">지속적인 모니터링과 튜닝을 통해 시스템의 효율성을 극대화합니다.</p>
+</div>
+</div>
+</section>
+<!-- CONTACT CTA -->
+<section class="py-section-gap px-margin-desktop bg-surface border-t border-on-background">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 mb-24">
+<p class="font-label-caps text-label-caps text-secondary mb-8">PORTFOLIO</p>
+<h2 class="font-display-xl text-display-xl-mobile md:text-headline-lg uppercase leading-none">SELECTED WORK</h2>
+</div>
+<!-- Project 01 -->
+<div class="col-span-12 border-t border-on-background py-12 group cursor-pointer">
+<div class="grid grid-cols-12 items-center gap-8">
+<div class="col-span-12 md:col-span-6">
+<span class="font-label-caps text-label-caps opacity-50 block mb-4">01 / FINTECH</span>
+<h3 class="font-display-xl text-headline-lg md:text-[120px] leading-none uppercase transition-colors group-hover:text-secondary">NEXUS FINANCIAL</h3>
+<p class="font-body-lg text-body-lg mt-8 max-w-xl">차세대 금융 아키텍처를 위한 고성능 트레이딩 플랫폼 및 자산 관리 시스템 구축.</p>
+<div class="mt-12 flex items-center gap-4 font-label-caps text-label-caps group-hover:gap-6 transition-all">
+            VIEW PROJECT <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 overflow-hidden">
+<div class="aspect-video bg-on-background grayscale group-hover:grayscale-0 transition-all duration-700">
+<img alt="Nexus Financial Project" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANCYJw11FoLG7RwBcAfo5-mGcj4rlxTlk8aiZ2NE-NrL9xMxtkUdM-pKOBiU9pO8Dql9Q--3lCUtWzqZoyQRNMXW6wW9Zi4v4-qjCmlsVO2YyxuhUkcuGQucl19hitArHCbnOrIvPJTpEr9qBsoSGZrlluQuf08moI5jrJh3u-ed36sMo4lbZPagb18BXTcR7iKutZxxhBuHW0Ij0l_GxhCVUJqDWNIsE7D_MHkij6wnTnsGOCvKx-_X9Dqas2vs7YDNb1eO3S9YQ"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 02 -->
+<div class="col-span-12 border-t border-on-background py-12 group cursor-pointer">
+<div class="grid grid-cols-12 items-center gap-8">
+<div class="col-span-12 md:col-span-6 md:order-2">
+<span class="font-label-caps text-label-caps opacity-50 block mb-4">02 / E-COMMERCE</span>
+<h3 class="font-display-xl text-headline-lg md:text-[120px] leading-none uppercase transition-colors group-hover:text-secondary">AURA BEAUTY</h3>
+<p class="font-body-lg text-body-lg mt-8 max-w-xl">글로벌 뷰티 브랜드를 위한 헤드리스 커머스 솔루션 및 초고속 사용자 경험 설계.</p>
+<div class="mt-12 flex items-center gap-4 font-label-caps text-label-caps group-hover:gap-6 transition-all">
+            VIEW PROJECT <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 md:order-1 overflow-hidden">
+<div class="aspect-video bg-on-background grayscale group-hover:grayscale-0 transition-all duration-700">
+<img alt="Aura Beauty Project" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8qiv0yNWcSEJfZOD0XUb9-m6nFnJVrVpBM-kmCZ-oBPfbF2sVKTGND7xkTEB_lKzSRSTV_WX6sFpM1o24wuAv-hdFViKdjfYekG11s0UjrdWVT2K4UQmr6n6-ZmbUFBeAvPnR_iWW0PLhUPjDHYfKcasZJ1euLTmrVHoKi8UXqbUGF3pbOdgBd66t5-990-aPG4NK2mjg5nOtRPOVIaEKr0yQnHrYv6GNf3ic5_wEnB7oWwgsOXaFeqd7pGtiQR6GMyVucFvnFqE"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 03 -->
+<div class="col-span-12 border-t border-b border-on-background py-12 group cursor-pointer">
+<div class="grid grid-cols-12 items-center gap-8">
+<div class="col-span-12 md:col-span-6">
+<span class="font-label-caps text-label-caps opacity-50 block mb-4">03 / AI INFRA</span>
+<h3 class="font-display-xl text-headline-lg md:text-[120px] leading-none uppercase transition-colors group-hover:text-secondary">SYNAPSE</h3>
+<p class="font-body-lg text-body-lg mt-8 max-w-xl">대규모 언어 모델(LLM) 통합을 통한 기업용 지능형 데이터 분석 엔진 개발.</p>
+<div class="mt-12 flex items-center gap-4 font-label-caps text-label-caps group-hover:gap-6 transition-all">
+            VIEW PROJECT <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 overflow-hidden">
+<div class="aspect-video bg-on-background grayscale group-hover:grayscale-0 transition-all duration-700">
+<img alt="Synapse AI Project" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGwhuEq6uHREBz70-exWVTDxnKYwWFAR7EWn9Wl4HQHTflQfI5cpV_QmoWY4z1a6i_JAGeAI2wN04kOjwKNv78iFMJZfM4ywBlj4LNXG7Z5r3f3bR9Ep513-JAZ1Xc9L2WxI6_mDPctUHYfZxY81LgeN0jtphAigFSUTwg_FhfFiX9A4ESIL4uNGNYaBdbciqoFHfzp_U2pxSqBdcV8OLlE9oaeC0ylmnVre0TwtXfAZSHcWFMvFEl1mkxug0cHLs4xFz_GdJ0WoA"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="min-h-[819px] flex flex-col items-center justify-center bg-secondary text-on-primary px-margin-desktop text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none flex flex-wrap gap-12 justify-center items-center select-none font-display-xl text-[200px] leading-none uppercase">
+<span>PROJECT</span><span>PROJECT</span><span>PROJECT</span><span>PROJECT</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-display-xl text-display-xl-mobile md:text-display-xl uppercase mb-12 leading-none">START A PROJECT</h2>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto mb-16 px-4">
+                새로운 디지털 시스템의 구축이 필요하신가요? 그리드 랩스의 엔지니어링 전문가들과 함께 미래를 설계하십시오.
+            </p>
+<button class="bg-primary text-on-primary border border-on-primary px-12 py-6 font-label-caps text-body-md uppercase hover:bg-on-background transition-all duration-300">
+                Contact Our Labs
+            </button>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="w-full min-h-[600px] flex flex-col justify-between bg-on-background dark:bg-surface-container-lowest text-surface p-0 border-t-2 border-on-background">
+<div class="grid grid-cols-12 gap-gutter px-margin-desktop py-section-gap w-full">
+<div class="col-span-12 md:col-span-6">
+<h2 class="font-display-xl text-display-xl uppercase block w-full leading-none -ml-2 mb-12">THE GRID LABS</h2>
+<p class="font-body-md text-surface-variant max-w-sm">디지털 시스템의 미학적 아키텍처와 기술적 완성도를 동시에 추구하는 기술 전문 에이전시입니다.</p>
+</div>
+<div class="col-span-12 md:col-span-2 mt-12 md:mt-0">
+<h4 class="font-label-caps text-label-caps text-secondary mb-6">SERVICES</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">E-Commerce</a></li>
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">ERP Systems</a></li>
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">AI Solutions</a></li>
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">Digital Strategy</a></li>
+</ul>
+</div>
+<div class="col-span-12 md:col-span-2 mt-12 md:mt-0">
+<h4 class="font-label-caps text-label-caps text-secondary mb-6">AGENCY</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">Work</a></li>
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">Contact</a></li>
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">Privacy</a></li>
+</ul>
+</div>
+<div class="col-span-12 md:col-span-2 mt-12 md:mt-0">
+<h4 class="font-label-caps text-label-caps text-secondary mb-6">CONNECT</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">LinkedIn</a></li>
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">Behance</a></li>
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">Instagram</a></li>
+<li><a class="font-body-md text-surface-variant hover:text-secondary transition-colors" href="#">Twitter (X)</a></li>
+</ul>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-surface/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-label-caps text-label-caps opacity-50">© 2024 THE GRID LABS. ARCHITECTING DIGITAL SYSTEMS.</span>
+<div class="flex gap-8 font-label-caps text-[10px] uppercase opacity-50">
+<a href="#">Seoul Office</a>
+<a href="#">Tokyo Studio</a>
+<a href="#">San Francisco Lab</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and simple effects
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.transform = 'scale(0.98)';
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = 'scale(1)';
+            });
+        });
+
+        // Parallax-ish scroll reveal for images
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            document.querySelectorAll('.hover-reveal-img').forEach(img => {
+                const speed = 0.05;
+                img.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+    </script>
+</body></html>
